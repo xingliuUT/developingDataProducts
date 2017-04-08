@@ -6,14 +6,17 @@ output: html_document
 ---
 
 ### Background
-This shiny application is part of the course project of Developing Data Products on Coursera (https://www.coursera.org/learn/data-products/).
+This shiny application is part of the course project of [Developing Data Products](https://www.coursera.org/learn/data-products/) on Coursera.
 
-This application is designed to visualize the yearly renewable energy consumption in the US starting from the year 1949 until 2016. The data comes from the U.S. Energy Information Administration (https://www.eia.gov/totalenergy/data/monthly/#renewable).
+This application is designed to visualize the yearly renewable energy consumption in the US starting from the year 1949 until 2016. The data comes from the [U.S. Energy Information Administration](https://www.eia.gov/totalenergy/data/monthly/#renewable).
 
 ### For users
-On the first page, users could customize the line plots of total consumption of one or more renewable energy sources in the unit of trillion Btu (British thermal unit) versus the year. This is done by choosing from the slider the year range of interest and from the check boxes the particular energy sources, for example, solar, wind, biofuels etc.
+On the first page, users could customize the line plots of total consumption of one or more renewable energy sources in the unit of trillion Btu (British thermal unit) versus year. This is done by choosing from the slider the year range of interest and from the check boxes the particular energy sources, for example, solar, wind, biofuels etc.
 
 On the second page, users specify a year to generate a table with various renewable energy sources and their corresponding consumption percentage in that year. On the main panel of the page, there's a pie chart that helps visualize the percentage consumption of each renewable energy.
 
 ### Source code
-The github link to the application could be found here: https://github.com/xingliuUT/developingDataProducts.
+The github link to the application could be found [here](https://github.com/xingliuUT/developingDataProducts). 
+
+### Presentation
+A presentation written in R presentation could be found [here](http://rpubs.com/xl3676/DevelopingDataProducts).
