@@ -21,7 +21,8 @@ On the second page, users specify a year to generate a table with various renewa
 A presentation written in R presentation could be found [here](http://rpubs.com/xl3676/DevelopingDataProducts).
 
 ### Source code
-The source code for web app is in files `server.R` and `ui.R`. 
-`PitchPresentation.css` and `pitchPresentation.md` contains source code for R presentations.
+The source code for R Shiny Application is in files `server.R` and `ui.R`. 
+
+The source code for R presentation is in files `PitchPresentation.css` and `pitchPresentation.md`.
 
 
