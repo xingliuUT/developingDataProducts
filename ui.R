@@ -50,10 +50,6 @@ shinyUI(fluidPage(
         )
       )
     ),
-    #tabPanel('Data', 
-    #         dataTableOutput(outputId = 'data1'),
-    #         downloadButton('downloadData', 'Download')
-    #),
     tabPanel('About', mainPanel(includeMarkdown("Readme.Rmd")))
   )
 )
