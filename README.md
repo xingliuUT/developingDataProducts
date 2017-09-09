@@ -11,6 +11,7 @@ The shiny application is developed as the course project of [Developing Data Pro
 I design the application to visualize the yearly renewable energy consumption in the US starting from the year 1949 until 2016. The data comes from the [U.S. Energy Information Administration](https://www.eia.gov/totalenergy/data/monthly/#renewable).
 
 ### For users
+The web application is available [here](https://xingliuut.shinyapps.io/shinyapp/).
 On the first page, users could customize the line plots of total consumption of one or more renewable energy sources in the unit of trillion Btu (British thermal unit) versus year. This is done by choosing from the slider the year range of interest and from the check boxes the particular energy sources, for example, solar, wind, biofuels etc.
 
 On the second page, users specify a year to generate a table with various renewable energy sources and their corresponding consumption percentage in that year. On the main panel of the page, there's a pie chart that helps visualize the percentage consumption of each renewable energy.
