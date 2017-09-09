@@ -89,7 +89,7 @@ type: sub-session
 class: small
 
 <img src="pitchPresentation-figure/unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="400px" height="400px" style="display: block; margin: auto;" />
-- <span style="color:blue"> Users could custimize the range of the year as well as the types of renewable energy sources they are interested to find out.</span>
+- <span style="color:blue"> Users slide the bar to choose year range of interest and check the boxes with types of renewable energy sources.</span>
 
 Second Plot: Percentage Consumption in a Given Year
 ========================================================
@@ -97,4 +97,4 @@ type: sub-session
 class: small
 
 <img src="pitchPresentation-figure/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="400px" height="400px" style="display: block; margin: auto;" />
-- <span style="color:blue"> Users specify a year to generate a pie chart that helps visualize the percentage consumption of each renewable energy.</span>
+- <span style="color:blue"> Users select a year. Then a table with the percentage consumption of each renewable energy source is listed. On the main panel, a pie chart shows the same percentages in different colors.</span>
