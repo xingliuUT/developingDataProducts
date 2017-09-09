@@ -33,7 +33,6 @@ consumption <- data1[-r,]
 consumption <- consumption[consumption$month == "SUM",]
 sources <-  vector(mode="character",length=nrow(consumption))
 for (i in 1:nrow(consumption)) {
-  #stri_sub(as.character(consumption$Description[1]), 1, -13)
    tempstr<- unlist(strsplit(as.character(consumption$Description[i]), " "))
    if (tempstr[1] == "Total") {
      sources[i] <- paste(tempstr[1], " ", tempstr[2])
@@ -45,17 +44,10 @@ for (i in 1:nrow(consumption)) {
 consumption <- cbind(consumption,sources)
 consumption$Description <- NULL
 
-
 sourceTypes <- unique(consumption$sources)
-#class(sourceTypes)
-#class(consumption$year)
-#print(sourceTypes)
+
 shinyServer(function(input, output) {
   
-  #output$text1 <- renderText({
-  #  paste("Year from",input$yearRange[1],"to",input$yearRange[2])
-  #  #input$sourceSelected)
-  #})
   output$chooseSources <- renderUI({
     checkboxGroupInput("sourceSelected", label = h4("Source Types"), 
                        choices = sourceTypes, selected = sourceTypes[9])
@@ -79,17 +71,17 @@ shinyServer(function(input, output) {
           axis.text.y = element_text(size = 16, face = "bold"),
           axis.title.x = element_text(size = 16, face = "bold"),
           axis.title.y = element_text(size = 16, face = "bold"))
-      #geom_text(data = subset(consumptionbySource(), year == (input$yearRange[1]+
-      #                                                        input$yearRange[2])/2),
-      #          aes(label = Description, color = Description, size = 6))
   })
+
   consumptionbyYear <- reactive(
     consumption[consumption$year == input$yearSelected & 
                   consumption$Column_Order < 11,]
   )
+
   output$text2 <- renderText({
     paste("Year = ",input$yearSelected)
   })
+
   output$dataThisYear <- renderDataTable({
     thisyear <- consumptionbyYear()[,c(5,3)]
     for (i in nrow(thisyear)) {
@@ -97,6 +89,7 @@ shinyServer(function(input, output) {
     }
     thisyear
   }, options = list(bFilter = FALSE))
+
   output$barGraphbyYear <- renderPlot({
     ggplot(data = consumptionbyYear(), 
            aes(x = "", y = Value, 
